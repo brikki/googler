@@ -1,0 +1,29 @@
+plugins {
+    id 'org.jetbrains.intellij' version '0.4.22'
+}
+
+group 'com.brikki.gglr'
+version '1.0-SNAPSHOT'
+
+// See https://github.com/JetBrains/gradle-intellij-plugin/
+intellij {
+    version '2020.2.1'
+}
+patchPluginXml {
+    changeNotes """
+      Add change notes here.<br>
+      <em></em>"""
+}
+
+repositories {
+    mavenCentral()
+}
+dependencies {
+
+   // compile group: 'com.google.guava', name: 'guava', version: '29.0-jre'
+    implementation("com.google.guava:guava:29.0-jre")
+    compile group: 'org.fujion', name: 'fujion-core', version: '2.0.0'
+
+}
+
+

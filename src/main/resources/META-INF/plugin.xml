@@ -1,0 +1,24 @@
+<idea-plugin>
+    <id>com.brikki.gglr.googler</id>
+    <name>googler</name>
+    <vendor email="igor.brikkel@gmail.com" url="http://example.com">Example.com</vendor>
+
+    <description>
+        <![CDATA[ = "Search in Google the selection text ctrl + / & ctrl + G"<br>]]>
+    </description>
+
+    <!-- please see https://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+         on how to target different products -->
+    <depends>com.intellij.modules.platform</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <!-- Add your extensions here -->
+    </extensions>
+
+    <actions>
+        <!-- Add your actions here -->
+        <action id="Googler" class="Googler" text="Googler" description="Search in Google the selection">
+            <keyboard-shortcut keymap="$default" first-keystroke="ctrl BACK_SLASH" second-keystroke="ctrl G"/>
+        </action>
+    </actions>
+</idea-plugin>
